@@ -13,6 +13,7 @@
         android:layout_weight="1"
         android:background="@android:color/darker_gray" />
 
+
     <FrameLayout
         android:id="@+id/fragment_container2"
         android:layout_width="0dp"

@@ -26,11 +26,16 @@
         <activity
             android:name=".activites.SingleStepActivity"
             android:parentActivityName=".activites.RecipeStepsActivity" />
+        <receiver android:name=".widgets.RecipeIngredientProvider">
+        <intent-filter>
+            <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+        </intent-filter>
         <meta-data
             android:name="android.appwidget.provider"
             android:resource="@xml/recipe_ingredient_provider_info" />
-
+        </receiver>
         <service android:name=".widgets.RecipeWidgetUpdateService"/>
     </application>
+
 
 </manifest>
